@@ -1,0 +1,20 @@
+{
+  "name": "ieee-tasks",
+  "version": "1.0.0",
+  "description": "Contains:  >Leaderboard  >Tasks  >Admin task upload",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kemosabe2911/ieee-tasks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kemosabe2911/ieee-tasks/issues"
+  },
+  "homepage": "https://github.com/Kemosabe2911/ieee-tasks#readme"
+}
