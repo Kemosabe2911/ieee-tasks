@@ -5,6 +5,7 @@
 body{
     box-sizing: border-box;
     background: #000000;
+    color: aliceblue;
 }
 
 .title h1{
