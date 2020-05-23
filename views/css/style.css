@@ -4,10 +4,10 @@
 }
 body{
     box-sizing: border-box;
+    background: #000000;
 }
-.container{
-    margin: 20px;
-}
-.title{
+
+.title h1{
     text-align: center;
+    text-transform: uppercase;
 }
