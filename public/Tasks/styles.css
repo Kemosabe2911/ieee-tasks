@@ -33,3 +33,7 @@ h1{
     border-right: 0px;
     border-bottom: 2px solid #000000;
 }
+.container form button{
+    position: relative;
+    left: 30%;
+}
