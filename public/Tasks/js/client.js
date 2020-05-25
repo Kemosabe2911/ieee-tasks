@@ -1,13 +1,19 @@
 const name= document.getElementById('name');
 const email=  document.getElementById('email');
-const submit= document.getElementById('submit');
+const myForm= document.getElementById('myForm');
 
-submit.addEventListener(submit,fetchData);
-
-function fetchData(e){
+myForm.addEventListener(submit,function(e){
     e.preventDefault();
+    fetchData;
+});
+
+function fetchData(){
+    
     fetch("http://localhost:3000/Tasks/tasks1.html",{
-        method: "POST"
+        method: "POST",
+        headers:{
+            'Content-Type': 'application/json'
+        }
     }
     )
     .then(res=>res.json())
