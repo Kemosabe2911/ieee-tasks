@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.container form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+.container form label{
+    margin: 10px;
+    text-transform: capitalize;
+}
+.container form input{
+    margin: 20px;
+    width: 250px;
+    padding: 3px;
+}
+.container form .text-input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #000000;
+}

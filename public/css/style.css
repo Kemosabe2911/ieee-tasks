@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background: #000000;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}
