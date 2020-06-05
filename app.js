@@ -9,6 +9,10 @@ const app= express();
 //app.use(expressLayouts);
 //app.set('view engine','ejs');
 
+app.use('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'public','Tasks'));
+})
+
 //Static Folder
 app.use(express.static(path.join(__dirname,'public')));
 
