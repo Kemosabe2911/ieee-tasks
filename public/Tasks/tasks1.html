@@ -71,8 +71,9 @@
         const name= document.getElementById('name');
         const email=  document.getElementById('email');
         const myForm= document.getElementById('myForm');
-
-        myForm.addEventListener(submit,function(e){
+        //document.getElementById("submit")
+        myForm.addEventListener("submit",function(e){
+            console.log("Hello");
             e.preventDefault();
             fetchData();
             /*
@@ -85,9 +86,9 @@
             });
             */
         });
-        function fetchData(){
-    
-    fetch("http://localhost:3000/tasks/task1",{
+
+    function fetchData(){
+    /*    fetch("http://localhost:3000/tasks/task1",{
         headers:{
             'Content-Type': 'application/json'
         }
@@ -95,9 +96,11 @@
     )
     .then((res)=> res.json())
     .then(data=>{
+        console.log("World");
         console.log(data);
     });
-    /*axios(
+    */
+    axios(
         {
             method: "POST",
             url: "http://localhost:3000/tasks/task1",
@@ -109,7 +112,6 @@
     )
     .then(res => console.log(res))
     .catch(err => console.error(err));
-    */
 }
 
     </script>
