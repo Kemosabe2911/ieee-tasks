@@ -4,7 +4,7 @@ const myForm= document.getElementById('myForm');
 
 myForm.addEventListener(submit,function(e){
     e.preventDefault();
-    postData('http://localhost:3000/Tasks/tasks1.html', { Name: name, Email : email })
+    postData('http://localhost:3000/tasks/tasks1', { Name: name, Email : email })
     .then(data => {
       console.log(data); // JSON data parsed by `response.json()` call
     })
