@@ -6,26 +6,130 @@
     <link rel="icon" href="data:image/png;base64,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" />
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:3000/Tasks/tasks1.html">
     <title>Tasks1</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+        .container form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid #000000;
+            padding: 20px;
+            border-radius: 20px;
+            width: 300px;
+        }
+        .container form label{
+            margin: 10px;
+            text-transform: capitalize;
+        }
+        .container form input{
+            margin: 20px;
+            width: 250px;
+            padding: 3px;
+        }
+        .container form .text-input{
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 2px solid #000000;
+        }
+        .container form button{
+            position: relative;
+            left: 30%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Tasks1</h1>
     <div class="container">
-        <form action="/tasks/tasks1" method="POST" id="myForm" enctype="multipart/form-data">
-            <div class="form-input">
-                <label for="name">Name</label>
-                <br>
-                <input type="name" name="name" id="name" class="text-input" placeholder="Enter Name">
-            </div>
-            <div class="form-input">
-                <label for="email">E-mail id</label>
-                <br>
-                <input type="email" name="email" id="email" class="text-input" placeholder="Enter E-mail">
-            </div>
-            <button id="submit" type="submit">Submit</button>
-        </form>
+        <h1 class="text-center">Task-1</h1>
+            <form action="/tasks/tasks1" method="POST" id="myForm" enctype="multipart/form-data">
+                <div class="form-input">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="name" name="name" id="name" class="text-input" placeholder="Enter Name">
+                </div>
+                <div class="form-input">
+                    <label for="email">E-mail id</label>
+                    <br>
+                    <input type="email" name="email" id="email" class="text-input" placeholder="Enter E-mail">
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
     </div>
     <a href="/">Home</a>
-    <script src="js/client.js"></script>
+    <script>
+        const name= document.getElementById('name');
+        const email=  document.getElementById('email');
+        const myForm= document.getElementById('myForm');
+
+        myForm.addEventListener(submit,function(e){
+            e.preventDefault();
+            fetchData();
+            /*
+            postData('http://localhost:3000/tasks/task1', { Name: name, Email : email })
+            .then(data => {
+            console.log(data); // JSON data parsed by `response.json()` call
+            })
+            .catch(err =>{
+                console.error(err); //Console logging error
+            });
+            */
+        });
+        function fetchData(){
+    
+    fetch("http://localhost:3000/tasks/task1",{
+        headers:{
+            'Content-Type': 'application/json'
+        }
+    }
+    )
+    .then((res)=> res.json())
+    .then(data=>{
+        console.log(data);
+    });
+    /*axios(
+        {
+            method: "POST",
+            url: "http://localhost:3000/tasks/task1",
+            data: {
+                Name: name,
+                Email: email
+            }
+        }
+    )
+    .then(res => console.log(res))
+    .catch(err => console.error(err));
+    */
+}
+
+    </script>
 </body>
 </html>
+
+<!--
+    <form class="form-container" method="POST" action="/tasks/tasks1" id="myForm" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="name">Name</label>
+      <input type="name" name="name" id="name" class="form-control" value="<%= typeof name != 'undefined' ? name : ''%>" 
+      placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+        <label for="email">E-mail Id</label>
+      <input type="email" name="email" id="email" class="form-control " 
+      value="<%= typeof email != 'undefined' ? email : ''%>" placeholder="Enter E-mail id">
+    </div>
+    <div class="d-flex justify-content-center">
+      <button id="submit" type="submit" class="btn btn-primary text-center">Submit</button>
+    </div>
+  </form>
+-->

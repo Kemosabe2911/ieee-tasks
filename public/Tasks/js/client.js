@@ -4,16 +4,19 @@ const myForm= document.getElementById('myForm');
 
 myForm.addEventListener(submit,function(e){
     e.preventDefault();
-    postData('http://localhost:3000/tasks/tasks1', { Name: name, Email : email })
+    fetchData();
+    /*
+    postData('http://localhost:3000/tasks/task1', { Name: name, Email : email })
     .then(data => {
       console.log(data); // JSON data parsed by `response.json()` call
     })
     .catch(err =>{
         console.error(err); //Console logging error
     });
+    */
 });
 
-
+/*
 async function postData(url = '', data = {}) {
     // Default options are marked with *
     const response = await fetch(url, {
@@ -31,11 +34,11 @@ async function postData(url = '', data = {}) {
     });
     return response.json(); // parses JSON response into native JavaScript objects
   }
+*/
 
-  /*function fetchData(){
+  function fetchData(){
     
-    fetch("http://localhost:3000/Tasks/tasks1.html",{
-        method: "POST",
+    fetch("http://localhost:3000/tasks/task1",{
         headers:{
             'Content-Type': 'application/json'
         }
@@ -45,10 +48,10 @@ async function postData(url = '', data = {}) {
     .then(data=>{
         console.log(data);
     });
-    axios(
+    /*axios(
         {
             method: "POST",
-            url: "http://localhost:3000/Tasks/tasks1.html",
+            url: "http://localhost:3000/tasks/task1",
             data: {
                 Name: name,
                 Email: email
@@ -57,4 +60,5 @@ async function postData(url = '', data = {}) {
     )
     .then(res => console.log(res))
     .catch(err => console.error(err));
-}*/
+    */
+}
