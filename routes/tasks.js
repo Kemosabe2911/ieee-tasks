@@ -8,10 +8,12 @@ router.get('/task1',(req,res) => res.sendFile(path.join(__dirname,'..','public',
 
 //Task2
 router.get('/task2',(req,res) => res.send('task2'));
+
+//Post Task1
 /*
-router.post('/task1', (req,res) =>{
-    const {name, email}= req.body;
+router.post('/task1',(req,res) =>{
     console.log(req.body);
+    const{ name, email} = req.body;
 });
 */
 
