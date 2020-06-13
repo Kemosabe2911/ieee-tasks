@@ -10,11 +10,12 @@ router.get('/task1',(req,res) => res.sendFile(path.join(__dirname,'..','public',
 router.get('/task2',(req,res) => res.send('task2'));
 
 //Post Task1
-/*
+
 router.post('/task1',(req,res) =>{
     console.log(req.body);
-    const{ name, email} = req.body;
+    res.send('Hello');
+    res.send(req.body);
 });
-*/
+
 
 module.exports = router;

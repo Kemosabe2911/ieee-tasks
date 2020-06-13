@@ -66,8 +66,33 @@
                 <button id="submit" type="submit">Submit</button>
             </form>
     </div>
+</body>
+</html>
+
+<!--
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
+-->
+
+<!--
+    <form class="form-container" method="POST" action="/tasks/tasks1" id="myForm" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="name">Name</label>
+      <input type="name" name="name" id="name" class="form-control" value="<%= typeof name != 'undefined' ? name : ''%>" 
+      placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+        <label for="email">E-mail Id</label>
+      <input type="email" name="email" id="email" class="form-control " 
+      value="<%= typeof email != 'undefined' ? email : ''%>" placeholder="Enter E-mail id">
+    </div>
+    <div class="d-flex justify-content-center">
+      <button id="submit" type="submit" class="btn btn-primary text-center">Submit</button>
+    </div>
+  </form>
+-->
+
+<!--
+        <script>
         const name= document.getElementById('name');
         const email=  document.getElementById('email');
         const myForm= document.getElementById('myForm');
@@ -132,27 +157,7 @@
         console.log(res);
     })
     .catch(err => console.error(err));
+    }
     */
-}
-
     </script>
-</body>
-</html>
-
-<!--
-    <form class="form-container" method="POST" action="/tasks/tasks1" id="myForm" enctype="multipart/form-data">
-    <div class="form-group">
-        <label for="name">Name</label>
-      <input type="name" name="name" id="name" class="form-control" value="<%= typeof name != 'undefined' ? name : ''%>" 
-      placeholder="Enter Name">
-    </div>
-    <div class="form-group">
-        <label for="email">E-mail Id</label>
-      <input type="email" name="email" id="email" class="form-control " 
-      value="<%= typeof email != 'undefined' ? email : ''%>" placeholder="Enter E-mail id">
-    </div>
-    <div class="d-flex justify-content-center">
-      <button id="submit" type="submit" class="btn btn-primary text-center">Submit</button>
-    </div>
-  </form>
 -->
